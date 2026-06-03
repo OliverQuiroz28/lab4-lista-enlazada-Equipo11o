@@ -93,4 +93,12 @@ class LinkedList:
         Returns:
             El nodo que contiene data, o None si no existe.
         """
-        raise NotImplementedError("Equipo C debe implementar search()")
+        current = self.head
+
+        while current:
+            if current.data == data:
+                return current.data
+
+            current = current.next
+
+        return None
