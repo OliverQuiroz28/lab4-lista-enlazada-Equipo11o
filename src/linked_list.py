@@ -97,7 +97,7 @@ class LinkedList:
 
         while current:
             if current.data == data:
-                return current.data
+                return current
 
             current = current.next
 
