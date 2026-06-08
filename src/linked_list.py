@@ -68,14 +68,14 @@ class LinkedList:
 
         if self.head.data == data:
             self.head = self.head.next
-            return
+            return True
 
         current = self.head
 
         while current.next:
             if current.next.data == data:
                 current.next = current.next.next
-                return
+                return True
 
             current = current.next
 
